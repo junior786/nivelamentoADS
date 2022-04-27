@@ -22,6 +22,6 @@ public class Event {
     private String name;
     @NotBlank
     private String address;
-    @OneToMany(fetch = FetchType.EAGER)
+    @ManyToMany(fetch = FetchType.EAGER)
     private List<Guest> guests;
 }
